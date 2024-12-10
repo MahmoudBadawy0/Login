@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>login</title>
+
+  <link rel="stylesheet" href="CSS/all.min.css" />
+  <link rel="stylesheet" href="CSS/bootstrap.min.css" />
+  <link rel="stylesheet" href="CSS/main.css" />
+</head>
+
+<body>
+  <main>
+    <div class="container my-5 text-center">
+      <div class="log m-auto w-75 p-5">
+        <h1>Smart Login System</h1>
+        <input type="email" id="loginEmail" class="form-control my-3 clr" placeholder="Enter your email" />
+        <input type="password" id="loginPassword" class="form-control clr my-3" placeholder="Enter your password" />
+
+        <div class="d-flex flex-column justify-content-center align-items-center">
+          <span id="incorrectEOP" class="m-2 text-danger d-none">incorrect email or password</span>
+          <span id="loginRequired" class="m-2 text-danger d-none">All inputs is required</span>
+        </div>
+
+        <button id="loginBtn" class="btn btn-outline-info w-100 my-3">Login</button>
+        <p class="text-white">Don't have an account? <a
+            class="link-underline-light link-underline-opacity-0 link-underline-opacity-100-hover text-white"
+            href="signup.html">Sign Up</a></p>
+      </div>
+    </div>
+  </main>
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="js/login.js"></script>
+</body>
+
+</html>

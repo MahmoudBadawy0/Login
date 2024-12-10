@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sign Up</title>
+
+  <link rel="stylesheet" href="CSS/all.min.css" />
+  <link rel="stylesheet" href="CSS/bootstrap.min.css" />
+  <link rel="stylesheet" href="CSS/main.css" />
+</head>
+
+<body>
+  <main>
+    <div class="container my-5 text-center">
+      <div class="log m-auto w-75 p-5">
+        <h1>Smart Login System</h1>
+        <input type="text" id="signupName" class="signup form-control my-3 clr" placeholder="Enter your name" />
+        <input type="email" id="signupEmail" class="signup form-control my-3 clr" placeholder="Enter your email" />
+        <input type="password" id="signupPassword" class="signup form-control clr my-3"
+          placeholder="Enter your password " />
+
+        <div class="d-flex flex-column justify-content-center align-items-center">
+          <span id="alreadyExists" class="text-danger m-2 d-none">Email already exists</span>
+          <span id="requiredInput" class="text-danger m-2 d-none">All inputs is required</span>
+          <span id="invalidInput" class="text-danger m-2 d-none">invalid inputs</span>
+          <span id="success" class="text-success m-2 d-none">Success</span>
+        </div>
+
+        <button id="signupBtn" class="btn btn-outline-info w-100 my-3">Sign Up</button>
+        <p class="text-white">Do You have an account? <a
+            class="link-underline-light link-underline-opacity-0 link-underline-opacity-100-hover text-white"
+            href="index.html">Signin</a></p>
+      </div>
+    </div>
+  </main>
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
